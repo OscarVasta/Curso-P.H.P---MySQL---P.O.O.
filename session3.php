@@ -1,0 +1,12 @@
+/* session3.php */
+<?php
+/* ESTE PROGRAMA BORRA TODOS LOS DATOS DE SESION CARGADOS EN ELPROGRAMA session1
+ES DECIR , EJECUTA EL CIERRA DE SESION PARA QUE NINGUN INTRUSO PUEDA LEER
+LOS DATOS DE LA SESION */
+
+session_start();
+session_unset();
+session_destroy();
+echo " LA SESION SE HA CERRADO ";
+echo "<br>";
+?>

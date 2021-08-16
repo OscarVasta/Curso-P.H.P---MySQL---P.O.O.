@@ -1,0 +1,41 @@
+<?php
+/* EJEMPLO SERVER.PHP */
+    $path = $_SERVER['PHP_SELF'];
+    $gateway = $_SERVER['GATEWAY_INTERFACE'];
+    $ip = $_SERVER['SERVER_ADDR'];
+    $sname = $_SERVER['SERVER_NAME'];
+    $ssoft = $_SERVER['SERVER_SOFTWARE'];
+    $sprot = $_SERVER['SERVER_PROTOCOL'];
+    $reqmet = $_SERVER['EQUEST_METHOD'];
+    $browser = $_SERVER['HTTP_USER_AGENT'];
+    $RIP = $_SERVER['REMOTE_ADDR'];
+    $RHost = $_SERVER['REMOTE_HOST'];
+    $RUS = $_SERVER['REMOTE_USER'];
+    $RPort = $_SERVER['REMOTE_PORT'];
+    echo " La ubicación de este programa es : $path";
+    echo '<br>';
+    echo " El Gateway Interface o Número de revisión de la especificación CGI del servidor es: $gateway";
+    echo '<br>';
+    echo " La dirección IP local del servidor es : $ip";
+    echo '<br>';
+    echo " El nombre del servidor es : $sname";
+    echo '<br>';
+    echo "El programa utilizado por el servidor es : $ssoft";
+    echo '<br>';
+    echo "El protocolo y version utilizado por el servidor  es: $sprot";
+    echo '<br>';
+    echo "El método utilizado para acceder a esta página es: $reqmet";
+    echo '<br>';
+    echo "El la cadena de browsers intermediarios usados para Browser aceder a esta página  (destino - origen) es : ";
+    echo '<br>';
+    echo $browser;
+    echo '<br>';
+    echO "La dirección IP de su dispositivo (desde el cual Ud.esata observando esta página) es : $RIP";
+    echo '<br>';
+    echO "El nombre del servidor desde el cual Ud. esta accediendo a esta página es : $RHost";
+    echo '<br>';
+    echO "Su nombre de usuario en su dispositivo es : .$RUS.";
+    echo '<br>';
+    echO "En n° de puerto con que su dispositivo se conecta a Internet para acceder a esta página es : .$RPort.";
+    echo '<br>';
+ ?>
